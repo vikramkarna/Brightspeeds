@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+    <script>
+        // var arr=[];
+        // var shirt={
+        //     name:"trends",
+        //     price:300
+        // };
+        // var pant={
+        //     name:"trends",
+        //     price:400
+        // };
+        // arr.push(shirt);
+        // arr.push(pant);
+        // var arr2=arr.reduce((acc,price)=>
+        // {
+        //     return acc+price.price;
+        // },0);
+        // console.log(arr2);
+
+        //Closure
+
+
+        // var a=10;
+        // function func1()
+        // {
+        //     var b=20;
+        //     function func2()
+        //     {
+        //         console.log(a);
+        //         console.log(b);
+        //     }
+        //     func2();
+        // }
+        // func1();
+
+        //Call Back Function
+
+
+
+        // function mySum(re)
+        // {
+        //     console.log(re);
+        // }
+        // function calculate(a,b,sum)
+        // {
+        //     var res=a+b;
+        //     sum(res);
+        // }
+        // calculate(5,5,mySum);
+
+        // setTimeout(display,3000);
+        // function display()
+        // {
+        //     console.log("Hello How are You");
+        // }
+
+        // console.log("Hii");
+        // setTimeout(()=>
+        // {
+        //     console.log("Executed Immidiately");
+        // });
+        // console.log("Bye");
+        //var s=document.getElementById('p1');
+</script>
+</head>
+<body>
+    <!-- <h1>This Is Header Tag</h1>
+    <p id="p1">Hello</p>
+    <p>hello how are you</p> -->
+    <!-- <input type="button" value="button" onclick="say()"> -->
+    <!-- <button>click me</button> -->
+     <!-- <h1 id="p1">demo text</h1><br>  -->
+    
+    <!-- name:<input type="text" name="name" id="n1"><br>
+    <button id="n">click</button> -->
+
+    <!-- Printing Name in Bold -->
+     <!-- <div id="d1"></div>
+    <br>
+    <p>Hello World</p>
+    <button id="n">click</button> -->
+
+    <ul>
+        <li onclick="say()" id="l1">ram</li>
+        <li id="l2">raj</li>
+        <li id="l3">rakesh</li>
+        <li id="l4">raju</li>
+    </ul>
+
+    <script>
+    var arr=["ram","raj","rakesh","raju"];
+    function say()
+    {
+       var s=document.getElementById("l1");
+       for(let i of arr)
+       {
+        if(s.value==i)
+        {
+            delete arr[i];
+        }
+        
+       }
+       console.log(arr);
+       
+
+    }
+    
+
+    
+
+
+   
+
+
+
+
+
+
+
+    // var arr=[];
+    // var name1={
+    //     name:"vikram"
+    // }
+    // var name2={
+    //     name:"ram"
+    // }
+    // var name3={
+    //     name:"raj"
+
+    // }
+    // arr.push(name1);
+    // arr.push(name2);
+    // arr.push(name3);
+    // var btn=document.getElementById('n');
+    // function fun()
+    // {
+    //     var s=document.getElementById('d1');
+    //     for(let i of arr)
+    //     {
+    //         s.innerHTML +=`<h1>${i.name}</h1>`;
+    //     }
+       
+    // }
+    // btn.addEventListener("click",fun);
+
+    // var btn=document.getElementById('n');
+    //  var i = document.getElementById('n1');
+    //  function fun()
+    //  {
+    //     console.log(i.value);
+    //  }
+    //  btn.addEventListener("click",fun);
+    // function fun(event)
+    // {
+    //     event.preventDefault();
+    //     console.log(i.value);
+    // }
+
+    // btn.addEventListener("click",fun);
+
+
+        // var btn=document.getElementById('d1');
+        // function bold()
+        // {
+        // // var name="vikram";
+        // // btn.innerHTML=`<h1>${name}</h1>`;
+        // var ele=document.createElement('h1');
+        // ele.innerHTML="Vikram";
+        // }
+        // btn.addEventListener('click',bold);
+
+
+
+
+
+    //    var btn=document.getElementById('n1');
+    //    function prNam()
+    //    {
+    //     console.log(btn.value);
+    //    }
+    //    btn.addEventListener('click',prNam);
+
+        // var btn=document.getElementById('p1');
+        // function chText()
+        // {
+        //     btn.innerHTML="i got clicked";
+        //     btn.style.backgroundColor="pink";
+        // }
+        // btn.addEventListener('click',chText);
+        // console.log(btn);
+
+        // var s=document.getElementById('p1');
+        // console.log(s.innerHTML);
+        // var s1=document.getElementsByTagName('h1');
+        // console.log(s1[0]);
+
+        // s.innerHTML="<b>Hii</b>";
+        // s1[0].textContent="<b>Hii</b>";
+
+
+        // function say()
+        // {
+        //     var f=document.getElementById('p1');
+        //     f.style.color="red";
+        // }
+
+        // var f=document.getElementById('p1');
+        // f.style.color="green"
+        
+
+        //Change Color
+        //  var btn=document.getElementsByTagName('button');
+        
+        //  function chColor()
+        //  {
+        //      var a=document.getElementById('p1');
+        //      a.style.color="red";
+        //  }
+        //  btn[0].addEventListener('click',chColor);
+
+        //Printing Name
+
+        // var btn=document.getElementsByTagName('button');
+
+        // function prName()
+        // {
+        //     var s=document.getElementById('n1');
+        //     var s2=document.getElementById('n2');
+        //     console.log(s.innerHTML);
+        //     console.log(s2.innerHTML);
+        // }
+        // btn[0].addEventListener('click',prName);
+
+       
+
+    </script>
+
+</body>
+</html>
