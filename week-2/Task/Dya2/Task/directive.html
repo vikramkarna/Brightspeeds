@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <title>Document</title>
+    <style>
+        .h{
+            color: red;
+        }
+    </style>
+</head>
+<body ng-app="app">
+    <div ng-controller="myCtrl">
+        {{name}}
+        <button ng-show="isLogin">click</button>
+        <button ng-hide="isRegister">Register</button>
+
+        <ul>
+            <li ng-repeat="num in arr1">{{num}}</li>
+        </ul>
+        <ul>
+            <li ng-repeat="num in arr">{{num.num}}</li>
+        </ul>
+
+        <p ng-repeat="num in arr">{{num.num}}</p>
+
+        <button ng-click="incre()">button</button>
+        <h1>{{count}}</h1>
+    </div>
+    <div ng-controller="dispName">
+        Name:<input type="text" name="name" ng-model="name">
+        <button ng-click="disp()">button</button>
+
+        <h1 ng-class="{h:isRed}">vikram</h1>
+
+    </div>
+    <div ng-controller="dispImg">
+        <button ng-click="displaying()">click</button>
+        <img ng-src={{img}} height="100px" width="100px">
+    </div>
+    <div ng-controller="dispObj">
+        <button ng-click="disp()">withoutSorting</button>
+        <button ng-click="sorted()">withSorting</button>
+
+    </div>
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular.min.js">
+        //  var x=[
+        //     {"number":3,"value":"text"},
+        //     {"number":2,"value":"text"},
+        //     {"number":1,"value":"text"}
+        // ]
+       
+        // console.log(x);
+
+        // var sortedAr=[...x];
+        // sortedAr.sort((a,b)=>a.number-b.number)
+        // console.log(sortedAr)
+
+    </script>
+    <script src="directive.js"></script>
+
+    
+</body>
+</html>
