@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Document</title>
+    <style>
+        .h {
+            color: red;
+            background-color: green;
+        }
+    </style>
+</head>
+
+<body ng-app="app">
+    <!-- <div ng-controller="myCtrl"> -->
+    <!-- <p ng-click="print()" ng-class="{h:text}">Hello</p>
+
+        <button ng-show="check">Login</button><br>
+        <button ng-hide="check">SignUp</button><br>
+        <button ng-click="toggle()">Toggle</button> -->
+
+
+
+    <!-- <table border="2" width="200px">
+            <tr>
+                <th>Id</th>
+                <th>name</th>
+            </tr>
+            <tr ng-repeat="d in person">
+                <td>{{d.id}}</td>
+                <td>{{d.name}}</td>
+            </tr>
+        </table>
+    </div>
+
+    <br><br><br> -->
+
+
+    <div ng-controller="form">
+        <div ng-show="flag">
+            <form>
+                <fieldset>
+                    <legend>Registration Form</legend>
+
+                    Id:<input type="number" name="id" ng-model="id"><br><br>
+                    Name:<input type="text" name="name" ng-model="name"><br><br>
+                    Email:<input type="email" name="name" ng-model="email"><br><br>
+                    Password:<input type="number" name="pass" ng-model="password"><br><br>
+                    Address:<input type="text" name="ad" ng-model="address"><br><br>
+                    <button ng-click="registerForm()">submit</button>
+
+                </fieldset>
+            </form>
+        </div>
+        <br><br><br>
+        <div ng-hide="flag">
+            <form>
+                <fieldset>
+                    <legend>Login Page</legend>
+
+                    Email:<input type="email" name="name" ng-model="e"><br><br>
+                    Password:<input type="number" name="pass" ng-model="p"><br><br>
+                    <button ng-click="loginForm()">submit</button>
+
+                </fieldset>
+            </form>
+        </div>
+        <button ng-click="click()">Toggle</button>
+
+    </div>
+    <br>
+   
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular.min.js"></script>
+    <script src="task.js"></script>
+
+</body>
+
+</html>
