@@ -1,0 +1,19 @@
+var app=angular.module("app",['ngRoute']);
+app.config(['$routeProvider',function($routeProvider){
+    $routeProvider.when("/",{
+        templateUrl:"../htmlPages/register.html",
+        controller:"registerCtrl"
+    })
+    .when("/signin",{
+        templateUrl:"../htmlPages/signIn.html",
+        controller:"signinCtrl"
+    })
+    .when("/register",{
+        templateUrl:"../htmlPages/register.html",
+        controller:"registerCtrl"
+    })
+    .when("/home",{
+        templateUrl:"../htmlPages/home.html",
+         controller:"HomeCtrl"
+    })
+}])
